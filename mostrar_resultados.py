@@ -8,7 +8,7 @@ def ver_mantenimientos():
     # Crear una nueva ventana
     ventana_mantenimientos = tk.Toplevel()
     ventana_mantenimientos.title("Listado de Mantenimientos")
-    ventana_mantenimientos.geometry("1400x400")
+    ventana_mantenimientos.geometry("1500x400")
 
     # Configurar el estilo del Treeview para usar una fuente más grande
     style = ttk.Style()
@@ -26,14 +26,14 @@ def ver_mantenimientos():
     tree.heading("Kilometros", text="Kilometros")
     tree.heading("Comentarios", text="Comentarios")
 
-    tree.column("ID", width=20, anchor="center")          # Ancho de 50 para ID
-    tree.column("Vehículo", width=55, anchor="center")   # Ancho de 100 para Vehículo
-    tree.column("Matrícula", width=45, anchor="center")  # Ancho de 100 para Matrícula
-    tree.column("Fecha", width=45, anchor="center") # Ancho de 100 para Kilómetros
-    tree.column("Taller", width=80, anchor="center")      # Ancho de 100 para Fecha
-    tree.column("Precio", width=45, anchor="center")     # Ancho de 150 para Taller
-    tree.column("Kilometros", width=45, anchor="center")      # Ancho de 80 para Precio
-    tree.column("Comentarios", width=650, anchor="center")# Ancho de 200 para Comentarios
+    tree.column("ID", width=15, anchor="center")
+    tree.column("Vehículo", width=55, anchor="center") 
+    tree.column("Matrícula", width=45, anchor="center") 
+    tree.column("Fecha", width=45, anchor="center") 
+    tree.column("Taller", width=85, anchor="center")     
+    tree.column("Precio", width=45, anchor="center")    
+    tree.column("Kilometros", width=45, anchor="center")     
+    tree.column("Comentarios", width=800, anchor="center")
     tree.pack(fill="both", expand=True)
 
     # Obtener los datos de la base de datos
