@@ -110,10 +110,10 @@ def editar_ventana(valores):
     # Llenar los campos con los datos del mantenimiento seleccionado
     entry_vehiculo.insert(0, valores[1])
     entry_matricula.insert(0, valores[2])
-    entry_kilometros.insert(0, valores[3])
-    entry_fecha.insert(0, valores[4])
-    entry_taller.insert(0, valores[5])
-    entry_precio.insert(0, valores[6])
+    entry_fecha.insert(0, valores[3])
+    entry_taller.insert(0, valores[4])
+    entry_precio.insert(0, valores[5])
+    entry_kilometros.insert(0, valores[6])
     entry_comentarios.insert("1.0", valores[7])
 
     # Posicionar los campos en la ventana
